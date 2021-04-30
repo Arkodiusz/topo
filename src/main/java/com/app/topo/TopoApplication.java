@@ -2,12 +2,17 @@ package com.app.topo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class TopoApplication {
-
+public class TopoApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(TopoApplication.class, args);
 	}
 
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(TopoApplication.class);
+    }
 }
