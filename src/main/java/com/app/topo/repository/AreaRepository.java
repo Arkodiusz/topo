@@ -20,4 +20,7 @@ public interface AreaRepository extends CrudRepository <Area, Long> {
 
     @Override
     Area save(Area area);
+
+    @Override
+    void deleteById(Long id);
 }

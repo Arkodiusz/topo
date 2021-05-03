@@ -2,6 +2,7 @@ package com.app.topo.service;
 
 import com.app.topo.domain.Area;
 import com.app.topo.repository.AreaRepository;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
