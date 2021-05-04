@@ -5,7 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-@Entity
+@Entity(name="ROUTES")
 @Getter
 @Setter
 @RequiredArgsConstructor

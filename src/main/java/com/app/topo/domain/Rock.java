@@ -6,7 +6,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Set;
 
-@Entity
+@Entity(name="ROCKS")
 @Getter
 @Setter
 @RequiredArgsConstructor
