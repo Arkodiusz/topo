@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @Transactional
 @SpringBootTest
-public class RouteServiceTest {
+class RouteServiceTest {
 
     @Autowired
     RouteService routeService;

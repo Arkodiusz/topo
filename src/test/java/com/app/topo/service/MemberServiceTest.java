@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @Transactional
 @SpringBootTest
-public class MemberServiceTest {
+class MemberServiceTest {
 
     @Autowired
     MemberService memberService;
