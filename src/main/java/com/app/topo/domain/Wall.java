@@ -25,6 +25,8 @@ public class Wall {
     @JoinColumn(name = "ROCK_ID")
     private Rock rock;
 
+    private String exposure;
+
     @OneToMany(mappedBy = "wall", fetch = FetchType.EAGER)
     private Set<Route> routes;
 }

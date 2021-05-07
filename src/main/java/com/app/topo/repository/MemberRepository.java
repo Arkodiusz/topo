@@ -1,6 +1,6 @@
 package com.app.topo.repository;
 
-import com.app.topo.domain.User;
+import com.app.topo.domain.Member;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,16 +10,16 @@ import java.util.Optional;
 
 @Transactional
 @Repository
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface MemberRepository extends CrudRepository<Member, Long> {
 
     @Override
-    List<User> findAll();
+    List<Member> findAll();
 
     @Override
-    Optional<User> findById(Long id);
+    Optional<Member> findById(Long id);
 
     @Override
-    User save(User user);
+    Member save(Member user);
 
     @Override
     void deleteById(Long id);

@@ -26,7 +26,9 @@ public class Route {
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "AUTHOR_ID")
-    private User author;
+    private Member author;
 
-
+    @NotNull
+    @NonNull
+    private String grade;
 }

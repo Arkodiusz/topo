@@ -21,9 +21,11 @@ public class Rock {
     @NonNull
     private String name;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "SECTOR_ID")
-    private Sector sector;
+    private Double latitude;
+
+    private Double longitude;
+
+    private Double elevation;
 
     @OneToMany(mappedBy = "rock", fetch = FetchType.EAGER)
     private Set<Wall> walls;

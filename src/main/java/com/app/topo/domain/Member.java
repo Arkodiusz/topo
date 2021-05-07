@@ -6,12 +6,12 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Set;
 
-@Entity(name = "USERS")
+@Entity(name = "MEMBERS")
 @Getter
 @Setter
 @RequiredArgsConstructor
 @NoArgsConstructor
-public class User {
+public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

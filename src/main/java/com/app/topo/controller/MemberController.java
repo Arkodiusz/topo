@@ -11,5 +11,5 @@ import static com.app.topo.TopoApplication.root;
 @RequestMapping(root)
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")
-public class UserController {
+public class MemberController {
 }
