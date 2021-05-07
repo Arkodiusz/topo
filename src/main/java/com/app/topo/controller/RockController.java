@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static com.app.topo.TopoApplication.root;
+import static com.app.topo.TopoApplication.ROOT;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
-@RequestMapping(root)
+@RequestMapping(ROOT)
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 public class RockController {
@@ -20,7 +20,7 @@ public class RockController {
     private final RockService rockService;
 
     @RequestMapping(method = RequestMethod.GET, value = "/rocks")
-    public List<Rock> getAreas() {
+    public List<Rock> getRocks() {
         return rockService.getAllRocks();
     }
 
@@ -39,7 +39,7 @@ public class RockController {
         return rockService.saveRock(rock);
     }
 
-    @RequestMapping(method = RequestMethod.DELETE, value = "/rocks")
+    @RequestMapping(method = RequestMethod.DELETE, value = "/rocks/{id}")
     public void deleteRock(@PathVariable Long id) {
         rockService.deleteRock(id);
     }

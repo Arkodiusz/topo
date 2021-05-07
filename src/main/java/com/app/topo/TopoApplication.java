@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class TopoApplication {
 
-	public static final String root = "v1";
+	public static final String ROOT = "v1";
 
 	public static void main(String[] args) {
 		SpringApplication.run(TopoApplication.class, args);
